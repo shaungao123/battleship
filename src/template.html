@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <h1 style="margin: 5px">Todo List</h1>
+    <div id = "container">
+        <div id = "sidebar">
+            <div id = "sidebar-header">
+                <h2>Sections</h2>
+                <button id = "add-category">Add Category</button>
+            </div>
+        </div>
+        <div id = "content"></div>
+        <button id = "add-todo">Add Item</button>
+    </div>
+
+    <dialog id = "category-form">
+        <form id = "category">
+            <fieldset>
+                <legend>Create a Category</legend>
+                <label for = "title">Title:</label>
+                <input type = "text" id = "title" name = "title" required/>
+                <button id = "submit-category" type = "submit">Submit</button>
+                <button id = "cancel-category" type = "button">Cancel</button>
+            </fieldset>
+        </form>
+    </dialog>
+
+    <dialog id = "todo-form">
+        <form id = "todo">
+            <fieldset>
+                <legend>Create a Todo Item</legend>
+                <label for = "title">Title:</label>
+                <input type = "text" id = "title" name = "title" required/>
+
+                <label for = "dueDate">Date:</label>
+                <input type = "date" id = "dueDate" name = "dueDate" required/>
+
+                <label for = "notes">Notes:</label>
+                <textarea id = "notes" name = "notes" rows = "6" cols = "50" placeholder="Type notes here..."></textarea>
+
+                <label for = "priority">Priority:</label>
+                <select id = "priority" name = "priority">
+                    <option value = "low">low</option>
+                    <option value = "medium">medium</option>
+                    <option value = "high">high</option>
+                </select>
+
+                <button id = "submit-todo" type = submit>Submit</button>
+                <button id = "cancel-todo" type = submit>Cancel</button>
+            </fieldset>
+        </form>
+    </dialog>
+</body>
+</html>
